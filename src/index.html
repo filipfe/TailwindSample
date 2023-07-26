@@ -7,24 +7,36 @@
     <link href="/dist/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header class="h-[90px] items-center grid grid-cols-[2fr_3fr] fixed w-full top-0 left-0 right-0">
-        <div class="px-[8vw]"><a href="/"><img src="./assets/logo.svg" alt=""></a></div>
-        <nav class="flex items-center px-[8vw] justify-between">
-            <div class="flex items-center gap-16">
-                <a class="text-sm" href="/">Product</a>
-                <a class="text-sm" href="/">Features</a>
-                <a class="text-sm" href="/">Pricing</a>
-                <a class="text-sm" href="/">Company</a>
-            </div>
-            <button class="bg-[#E9E3FF] rounded-full py-2 px-4 text-[#4318FF] font-bold text-sm">Try it for free</button>
-        </nav>
+    <header class="fixed w-full top-0 left-0 right-0">
+        <div class="items-center grid grid-cols-1 md:grid-cols-[2fr_3fr] py-6 bg-white md:bg-transparent">
+            <div class="px-[8vw] hidden md:block"><a href="/"><img src="./assets/logo.svg" alt=""></a></div>
+            <nav class="flex flex-wrap gap-4 sm:items-center px-[8vw] justify-between">
+                <div class="flex items-center gap-4 xl:gap-16">
+                    <a class="text-sm" href="/">Product</a>
+                    <a class="text-sm" href="/">Features</a>
+                    <a class="text-sm" href="/">Pricing</a>
+                    <a class="text-sm" href="/">Company</a>
+                </div>
+                <button class="bg-[#E9E3FF] rounded-full py-2 px-4 text-primary font-bold text-sm w-max">Try it for free</button>
+            </nav>
+        </div>
     </header>
-    <main class="h-screen xl:grid grid-cols-[2fr_3fr] flex flex-col-reverse">
-        <div class="bg-white min-h-screen xl:hidden"></div>
+    <main class="xl:h-screen flex flex-col-reverse md:grid grid-cols-[2fr_3fr]">
         <img src="./assets/main.png" class="h-full min-h-full w-full object-cover" alt="">
+        <div class="bg-white min-h-[80vh] md:min-h-screen px-[8vw] flex items-center">
+            <div class="flex flex-col gap-4">
+                <h2 class="text-primary font-bold text-sm tracking-widest">FASTEST WEBSITE TEMPLATES</h2>
+                <h1 class="text-4xl/tight xl:text-6xl/tight font-extrabold max-w-[14ch] text-font">Design, prototype and build innovative technologies</h1>
+                <p class="text-p text-sm/loose md:text-base md:leading-[30px] max-w-[38ch]">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+                <div class="flex items-center flex-wrap gap-4 h-[56px] relative mt-4">
+                    <input class="rounded-full min-w-0 md:min-w-[3in] h-full px-8 border-[#E0E5F2] border-[1px] placeholder:text-[#707EAE] text-sm" type="text" placeholder="Enter email to get started">
+                    <button class="bg-primary rounded-full text-white px-8 h-full w-max min-w-max">Start your 7 days trial</button>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="px-[8vw] md:px-[12vw] 2xl:px-[18vw]"></footer>
 </body>
